@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+
+<body>
+     <h2 id="demo"></h2>
+     <h2 id="total"></h2>
+
+     <a href="#" onclick="mensaje();">Mostrar código secreto</a>
+
+
+    <footer>
+
+    </footer>
+    <script>
+        //Una funcion es un fragmento de codigo que se puede reutilizar en todo el sistema
+
+        //Como declaramos las funciones
+        //Se definen mediante la palabra reservada function, seguida del nombre de la funcion
+
+        /*
+
+        function nombre_funcion(parametro1, parametro2...) {
+            Codigo de la funcion que se ejecuta
+        }
+
+        */
+
+        var nombre = 'James Bond';
+
+        //Dos tipos de funciones: anonimas y las autoejecutables
+
+        //Funcion anonima necesita un evento que la mande a llamar
+        function agente () {
+            return 'Bienvenido Super Agente ' + nombre;
+        }
+        //Con esto se manda a llamar
+        document.getElementById('demo').innerHTML= agente();
+
+
+        //Dos tipos de Scope de la variable, variables locales y variables globales:
+            //Variable local: Solo vive dentro de la funcion donde fue declarada
+            //Variable global: Es la que puede usarse a lo largo de todo el sistema, debe declararse fuera de una funcion
+
+        function calcularPrecioTotal(precio) {
+            var impuestos = 1.16;
+            var gastosEnvio = 150;
+            var precioTotal = (precio * impuestos) + gastosEnvio;
+
+            return 'Su precio total es $' + precioTotal;
+        }
+
+        document.getElementById('total').innerHTML = calcularPrecioTotal(254);
+
+        //Acciones de usuario, la accion a realizar por el usuario esta en el código HTML del body
+        function mensaje() {
+            alert ('Código Secreto 007');
+        }
+
+
+
+    </script>
+</body>
+
+</html>

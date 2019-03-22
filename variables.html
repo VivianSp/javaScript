@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+</head>
+
+<body>
+
+    <footer>
+
+    </footer>
+    <script>
+        //Variables sirven para almacenar datos
+        //Tipos de variables: numericas, cadenas, booleanas, null
+        //Las variables no pueden empezar con un _ ni con numeros
+        //Las variables son case sensitive
+        //No se puede usar palabras reservadas del lenguaje de javascript, ejemplo: var, new, function, math, etc
+
+        //Para declarar la variable se usa la palabra var y despues con el simbolo de asignacion (=) le das el valor, pero tambien pueden tener un valor vacio
+        var numero = 10;
+        var vacio = "";
+
+        //Se pueden usar numeros positivos y negativos
+        var negativo = -15;
+
+        //Las variables que contienen cadenas van dentro de comillas dobles o sencillas ("")
+        var nombre = "James Bond";
+
+        //Las variables pueden hacer operaciones con otras variables
+        var x = 5;
+        var y = 3;
+        var z = x+y;
+
+        //Las variables pueden ser cambiados los valores originales en la programacion
+        var x = 10;
+
+        var i = 0;
+        var i = i++;
+
+        alert("El valor de la variable nombre es:" + nombre);
+        document.write(z);
+        console.log(x); //Sirve para hacer pruebas, solo lo veo yo al darle inspeccionar y console
+
+
+
+        //Caracteres especiales
+        /*
+
+        \b caracter anterios
+        \f salto de pagina
+        \n salto de linea
+        \r retorno de carro
+        \t tabulador
+        \\ caracter
+        \' caracter de comilla simple
+        \" caracter de comilla doble
+
+        */
+
+        var comillas = 'Bienvenido \" James Bond \" ';
+        document.write(comillas);
+
+    </script>
+</body>
+
+</html>

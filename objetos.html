@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos</title>
+</head>
+<body>
+
+  <h2 id="demo"></h2>
+
+   <footer>
+
+   </footer>
+   <script>
+      //Los objetos son también funciones, pero los objetos pueden tener muchos valores
+
+       //Sintaxis:
+       /*
+
+       var nombreObjeto = {propiedad: valor, propiedad: valor...};
+
+       */
+
+       //El acceso a las propiedades de los objetos es la siguiente:
+       /*
+
+       nombreObjeto.propiedad
+
+       */
+
+       var carro = {marca: 'Audi', color: 'Rojo', puertas: 2, modelo: 'A3', fabricacion: 2019};
+
+       document.getElementById("demo").innerHTML='La marca del auto más vendido en el mundo es: ' + carro.marca + '<br>' +'El color más popular de esta marca es: ' + carro.color + '<br>' + 'El modelo que se vendió el año pasado fue el: ' + carro.modelo;
+
+
+
+
+   </script>
+</body>
+</html>

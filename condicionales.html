@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condicionales</title>
+</head>
+
+<body>
+
+    <footer>
+
+    </footer>
+    <script>
+
+        //La estructura mas utilizada en JavaScript y la mayoria de los lenguajes de programacion son las condicionales y se emplean para tomar decisiones
+
+        //Condicional if
+        /*
+
+        if(condicion) {
+            //Si la condicion se cumple se ejecuta lo que esta dentro de la condicional if
+        } //Si no se cumple se sale y sigue con la programacion del programa
+
+        */
+
+        var mostrarMensaje = true;
+        if(mostrarMensaje) {
+            document.write('Hola Mundo!');
+        }
+
+        var a = 5;
+        var b = 8;
+
+        //Operadores lógicos:
+        /*
+
+        == operador de igualdad
+        === operador de igualdad en valor y tipo de la variable
+                var numero = 5;
+                var cadena = '5';
+                == es true
+                === false porque uno es numero y el otro cadena
+        < operador de menor que
+        > operador de mayor que
+        <= operador de menor o igual
+        >= operador de mayor o igual
+        ! operador de negación
+        || operador de or, condicion de uno u otro, solo una condición debe ser verdadera
+        && operador de and, ambas condiciones deben ser verdaderas
+
+        */
+
+        if(a < b) {
+            document.write('5 es menor que 8');
+        }
+
+        var x = 12;
+        var y = 5;
+
+        if(x >= y) {
+            document.write('El numero 12 es mayor que el numero 5');
+        }
+
+        //Condicional if / else
+        //Normalmente las condiciones son del tipo "si se cumple la condicion haz esto y si no se cumple haz esto otro"
+        /*
+
+        if (condicion) {
+            si es verdadero se ejecuta este código
+        } else {
+            si no es verdadero se ejecuta este código
+        }
+
+        */
+
+        var edad = 16;
+
+        if(edad >= 18) {
+           alert('Ya eres mayor de edad');
+        } else {
+           alert('Aun no puedes entrar');
+        }
+
+        //Estructura if / else anidada (if / else if... / else)
+
+        var edad2 = 27;
+
+        if (edad2<12) {
+            alert('Eres un adolescente');
+        } else if (edad2<19) {
+            alert('Bienvenido a la adultez');
+        } else if (edad2<35) {
+            alert('Eres un chavo ruco');
+        } else {
+            alert('Ya jubílate');
+        }
+
+
+    </script>
+
+</body>
+
+</html>
